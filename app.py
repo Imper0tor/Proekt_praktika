@@ -1,6 +1,6 @@
 from tkinter import *
 from manager import Manager
-from gui import Interface
+from int import Interface
 
 root = Tk()
 pm = Manager()
