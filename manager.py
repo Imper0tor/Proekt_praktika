@@ -157,15 +157,7 @@ class Manager():
         except FileExistsError:
             print(f'Katalog {name} istnieje')
 
-    def add_file(self, *args):
-        lb, name, del_edit_spot, refresh_lb, item = args
-        self.refresh_when_add(lb)
-        try:
-            os.mknod(name)
-            del_edit_spot()
-            refresh_lb()
-        except FileExistsError:
-            print(f'Plik {name} istnieje')
+
 
     def refresh_when_add(self, lb):
         self.get_tree(lb)
